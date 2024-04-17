@@ -13,14 +13,14 @@ const Header = () => {
         <span>Rezilla, 18 Grattan St, Brooklyn </span>
       </div>
 
-      <div className="header-item">
+      <div className="header-item header-phone">
         <Icon>
           <Phone />
         </Icon>
         <span>+1 206-214-229 </span>
       </div>
 
-      <div className="header-item">
+      <div className="header-item header-em">
         <Icon>
           <Email />
         </Icon>

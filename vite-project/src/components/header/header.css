@@ -18,8 +18,24 @@
 .header-item {
   display: flex;
   align-items: center;
+  padding-left: 40px;
 }
 
 .header-item span {
   margin-left: 5px;
+}
+
+.header-phone,
+.header-email {
+  margin-left: auto;
+}
+
+.header-em {
+  margin-right: 50px;
+}
+
+.header-item .MuiSvgIcon-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
