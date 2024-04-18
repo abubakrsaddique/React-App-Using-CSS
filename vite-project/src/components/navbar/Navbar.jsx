@@ -26,23 +26,20 @@ const Navbar = () => {
         <span>Blogs</span>
       </div>
 
-      <div className="navbar-item">
-        <Icon>
+      <div className="nav-itm-center">
+        <Icon className="nav-icon">
           <Home />
         </Icon>
         <span>Rezilla</span>
       </div>
 
-      <div className="navbar-item">
-        <Icon>
+      <div className="nav-itm-right">
+        <Icon className="nav-icon">
           <AccountCircle />
         </Icon>
         <span>Login/Register</span>
-      </div>
-
-      <div className="navbar-item">
-        <Icon>
-          <Add />
+        <Icon className="nav-addlist nav-icon">
+          <Home />
         </Icon>
         <span>Add Listing</span>
       </div>
