@@ -28,7 +28,7 @@
   align-items: center;
   font-weight: 600;
   font-size: larger;
-  margin-left: 335px;
+  margin-left: 295px;
   margin-top: 25px;
 }
 .nav-itm-center {
@@ -40,10 +40,11 @@
   margin-top: 25px;
 }
 .nav-addlist {
-  padding-left: 50px;
+  padding-left: 20px;
 }
 .nav-icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 12px;
 }
