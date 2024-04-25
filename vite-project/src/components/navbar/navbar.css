@@ -4,7 +4,7 @@
 }
 .nav {
   position: absolute;
-  top: 18%;
+  top: 16%;
   left: 4%;
   display: flex;
   justify-content: space-between; /* Distribute items evenly */
