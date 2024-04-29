@@ -5,7 +5,7 @@ import "./realestatesection.css";
 
 const RealEstateSection = () => {
   return (
-    <div className="main" style={{ marginTop: "20%" }}>
+    <div className="main" style={{ marginTop: "24%" }}>
       <div className="mar">
         <div style={{ width: "67%" }}>
           <h1 className="title">REAL ESTATE</h1>

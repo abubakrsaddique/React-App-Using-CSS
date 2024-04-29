@@ -35,17 +35,27 @@ const MySwiperComponent = () => {
   };
 
   return (
-    <div className="swiper-container">
-      <div className="swiper-wrapper">
-        <div className="swiper-slide">
-          <img src={SliderImage1} alt="" className="slider-image" />
+    <div className="my-swiper-component">
+      {" "}
+      {/* Add a container class */}
+      <div className="swiper-container">
+        <div className="swiper-wrapper">
+          <div className="swiper-slide">
+            <img src={SliderImage1} alt="" className="slider-image" />
+          </div>
+          <div className="swiper-slide">
+            <img src={SliderImage2} alt="" className="slider-image" />
+          </div>
         </div>
-        <div className="swiper-slide">
-          <img src={SliderImage2} alt="" className="slider-image" />
-        </div>
+        <div
+          className="swiper-button-prev"
+          onClick={handlePrevButtonClick}
+        ></div>
+        <div
+          className="swiper-button-next"
+          onClick={handleNextButtonClick}
+        ></div>
       </div>
-      <div className="swiper-button-prev" onClick={handlePrevButtonClick}></div>
-      <div className="swiper-button-next" onClick={handleNextButtonClick}></div>
     </div>
   );
 };
