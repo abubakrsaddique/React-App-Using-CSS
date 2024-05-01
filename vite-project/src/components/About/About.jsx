@@ -4,9 +4,9 @@ import "aos/dist/aos.css";
 import "./about.css";
 
 import RoundImage from "../../images/round.png";
-import Image1 from "../../images/pic1.jpg";
-import Image2 from "../../images/pic3.jpg";
-import Image3 from "../../images/pic4.jpg";
+import Image1 from "../../images/about1.png";
+import Image2 from "../../images/about2.png";
+import Image3 from "../../images/about3.png";
 
 const About = () => {
   useEffect(() => {
@@ -117,6 +117,52 @@ const About = () => {
                       Nullam a lacinia ipsum, nec dignissim purus. Nulla
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Right Side */}
+        <div className="right-container">
+          <div className="right-sub-container">
+            <div className="right-container-detail">
+              <h1 className="roundimg">
+                <img
+                  data-aos-delay="500"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                  data-aos-easing="ease-in-out"
+                  className="rotate"
+                  src={RoundImage}
+                  alt=""
+                />
+              </h1>
+            </div>
+            <div className="right-container-pics">
+              <div>
+                <img
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  className="right-container-pics1 aos-init aos-animate"
+                  src={Image1}
+                  alt=""
+                />
+              </div>
+              <div>
+                <div
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                >
+                  <img src={Image2} alt="" />
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                >
+                  <img src={Image3} alt="" />
                 </div>
               </div>
             </div>

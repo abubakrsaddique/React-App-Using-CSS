@@ -82,3 +82,39 @@
   font-size: 16px;
   font-weight: 400;
 }
+/* Right Side */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ight-container-detail {
+  display: flex;
+  justify-content: center;
+}
+.roundimg {
+  position: absolute;
+  margin-top: 9%;
+  margin-left: 31%;
+}
+
+.right-container-pics {
+  display: flex;
+  padding-top: 200px;
+  margin-left: 32%;
+}
+.right-container-pics1 {
+  padding-top: 48px;
+}
+.rotate {
+  animation: spin 20s infinite linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
