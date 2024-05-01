@@ -3,6 +3,7 @@ import Header from "../src/components/header/Header";
 import Navbar from "./components/navbar/Navbar";
 import RealEstateSection from "./components/realestatesection/RealEstateSection";
 import CardComponent from "./components/cardcomponent/CardComponent";
+import MarqueeComponent from "./components/marqueecomponent/MarqueeComponent";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <RealEstateSection />
       <CardComponent />
+      <MarqueeComponent />
     </>
   );
 }
