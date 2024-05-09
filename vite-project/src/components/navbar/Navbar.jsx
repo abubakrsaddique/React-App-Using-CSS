@@ -25,7 +25,7 @@ function Navbar() {
             </button>
           </div>
           <div className="nav-img-center">
-            <img src={Rezila} />
+            <img src={Rezila} style={{ maxWidth: "90%" }} />
           </div>
           <div>
             <div className="nav-item-right">

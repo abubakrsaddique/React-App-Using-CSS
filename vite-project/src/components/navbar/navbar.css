@@ -4,10 +4,10 @@
 }
 .nav {
   position: absolute;
-  top: 16%;
+  top: 20%;
   left: 4%;
   display: flex;
-  justify-content: space-between; /* Distribute items evenly */
+  justify-content: space-between;
   align-items: center;
 }
 .container {
@@ -24,7 +24,8 @@
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  margin-right: 225px;
+  margin-right: 200px;
+  margin-top: 8px;
 }
 
 .nav-item-right p {
@@ -32,32 +33,32 @@
 }
 
 .nav-item-right button {
-  margin-left: 10px;
+  margin-left: -11px;
 }
 .add-list {
   margin-left: 8px;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
 }
 .nav-links {
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   cursor: pointer;
   padding: 13px 16px;
   background-color: initial;
 }
 .nav-login {
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   margin-left: 6px;
 }
 .nav-img-center {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 108px;
+  margin-left: 70px;
 }
