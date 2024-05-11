@@ -26,7 +26,7 @@ const ContactForm = () => {
         </div>
         <hr className="hr" />
         <div className="form-input" style={{ height: "90%" }}>
-          <div style={{ maxWidth: "340px" }}>
+          <div style={{ maxWidth: "300px" }}>
             <input
               type="text"
               id="name"
@@ -40,7 +40,7 @@ const ContactForm = () => {
               id="email"
               name="email"
               required
-              className="in-field my-4 px-6"
+              className="in-field"
               type="text"
               placeholder="Email Address"
               value=""
@@ -52,7 +52,7 @@ const ContactForm = () => {
               className="text-field"
               placeholder="Message"
               cols="30"
-              rows="5"
+              rows="8"
             ></textarea>
             <button type="submit" className="Submit-btn">
               Submit

@@ -4,18 +4,19 @@
   margin-top: -225px;
 }
 .contact-h1 {
-  font-size: 30px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 38px;
-  padding-bottom: 10px;
+  padding-top: 29px;
+  padding-bottom: 21px;
+  font-weight: 500;
 }
 .line {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 448px;
+  width: 420px;
   padding-bottom: 3px;
 }
 
@@ -56,7 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -5px;
+  margin-top: -15px;
   margin-left: -48px;
 }
 .contactus {
@@ -64,7 +65,7 @@
   border-radius: 30px;
   box-shadow: 10px 30px 50px 0 rgba(0, 0, 0, 0.05);
   height: 582px;
-  width: 462px;
+  width: 420px;
 }
 .Submit-btn {
   background: #3a0ca3;
