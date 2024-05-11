@@ -1,63 +1,67 @@
-import React, { useEffect } from "react";
-import Swiper from "swiper";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import SliderImage1 from "../../images/pic1.jpg";
-import SliderImage2 from "../../images/slider.jpg";
 import "./myswipercomponent.css";
+import slider from "../../images/slider.png";
 
-const MySwiperComponent = () => {
-  useEffect(() => {
-    const swiper = new Swiper(".swiper-container", {
-      slidesPerView: 1,
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-    return () => {
-      swiper.destroy();
-    };
-  }, []);
-
-  const handleNextButtonClick = () => {
-    const swiper = document.querySelector(".swiper-container").swiper;
-    swiper.slideNext();
-  };
-
-  const handlePrevButtonClick = () => {
-    const swiper = document.querySelector(".swiper-container").swiper;
-    swiper.slidePrev();
-  };
-
+const MySwiperComponents = () => {
   return (
-    <div className="my-swiper-component">
-      {" "}
-      {/* Add a container class */}
-      <div className="swiper-container">
-        <div className="swiper-wrapper">
-          <div className="swiper-slide">
-            <img src={SliderImage1} alt="" className="slider-image" />
-          </div>
-          <div className="swiper-slide">
-            <img src={SliderImage2} alt="" className="slider-image" />
-          </div>
-        </div>
-        <div
-          className="swiper-button-prev"
-          onClick={handlePrevButtonClick}
-        ></div>
-        <div
-          className="swiper-button-next"
-          onClick={handleNextButtonClick}
-        ></div>
-      </div>
+    <div className="slider-container">
+      <Swiper
+        navigation={{
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+        }}
+        pagination={{ clickable: true }}
+        className="swiper"
+      >
+        <SwiperSlide>
+          <img src={slider} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slider} alt="" />
+        </SwiperSlide>
+      </Swiper>
+      <div className="swiper-button-prev"></div>
+      <div className="swiper-button-next"></div>
+      <div className="swiper-pagination"></div>
+      <p className="slide-circle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="61"
+          height="61"
+          viewBox="0 0 61 61"
+          fill="none"
+        >
+          <circle
+            cx="30.1698"
+            cy="30.17"
+            r="30"
+            transform="rotate(30 30.1698 30.17)"
+            fill="url(#paint0_linear_1_189)"
+          ></circle>
+          <defs>
+            <linearGradient
+              id="paint0_linear_1_189"
+              x1="30.1698"
+              y1="0.169971"
+              x2="30.1698"
+              y2="60.17"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#4361EE"></stop>
+              <stop offset="1" stopColor="#4361EE" stopOpacity="0"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </p>
+      <span
+        className="swiper-notification"
+        aria-live="assertive"
+        aria-atomic="true"
+      ></span>
     </div>
   );
 };
 
-export default MySwiperComponent;
+export default MySwiperComponents;
