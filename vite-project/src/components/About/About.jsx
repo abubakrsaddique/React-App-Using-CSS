@@ -147,6 +147,7 @@ const About = () => {
                   className="right-container-pics1 aos-init aos-animate"
                   src={Image1}
                   alt=""
+                  style={{ width: "317px" }}
                 />
               </div>
               <div>

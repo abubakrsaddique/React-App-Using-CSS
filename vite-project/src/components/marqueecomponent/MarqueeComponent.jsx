@@ -9,7 +9,7 @@ import Spotify from "../../images/spotify.png";
 
 const MarqueeComponent = () => {
   return (
-    <div style={{ width: "146%" }}>
+    <div style={{ width: "100%" }}>
       <div className="marque-cont" style={{ width: "100%" }}>
         <h1 className="marque-circle">
           <svg
