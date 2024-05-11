@@ -12,9 +12,9 @@ function App() {
       <Header />
       <Navbar />
       <RealEstateSection />
-      {/* <CardComponent />
+      <CardComponent />
       <MarqueeComponent />
-      <About /> */}
+      <About />
     </>
   );
 }
