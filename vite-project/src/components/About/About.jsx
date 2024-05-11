@@ -139,7 +139,7 @@ const About = () => {
               </h1>
             </div>
             <div className="right-container-pics">
-              <div>
+              <div style={{ marginRight: "-10px" }}>
                 <img
                   data-aos="fade-right"
                   data-aos-duration="1000"

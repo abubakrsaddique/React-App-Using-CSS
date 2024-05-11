@@ -10,12 +10,12 @@
   );
   border-radius: 0 0 800px 800px;
   height: 760px;
-  width: 132.8%;
+  width: 134%;
 }
 .mar {
   margin-top: -21px;
   margin-left: 85px;
-  width: 64%;
+  width: 41.5%;
 }
 .title {
   color: #4361ee;
@@ -25,7 +25,7 @@
 }
 .heading-h2 {
   color: #0b090a;
-  font-size: 57px;
+  font-size: 57.3px;
   font-weight: 600;
   line-height: 65px;
   margin-bottom: 20px;
