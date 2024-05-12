@@ -1,19 +1,43 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "./myswipercomponent.css";
 import slider from "../../images/slider.png";
 
 const MySwiperComponents = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const swiperRef = useRef(null);
+
+  const handleNextButtonClick = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+
+  const handlePrevButtonClick = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      if (currentSlide === 1) {
+        swiperRef.current.swiper.slidePrev();
+        setCurrentSlide(0);
+      }
+    }
+  };
+
+  const handleSlideChange = () => {
+    setCurrentSlide(swiperRef.current.swiper.realIndex);
+  };
+
   return (
     <div className="slider-container">
       <Swiper
+        ref={swiperRef}
         navigation={{
           prevEl: ".swiper-button-prev",
           nextEl: ".swiper-button-next",
         }}
         pagination={{ clickable: true }}
         className="swiper"
+        onSlideChange={handleSlideChange}
       >
         <SwiperSlide>
           <img src={slider} alt="" />
@@ -22,8 +46,8 @@ const MySwiperComponents = () => {
           <img src={slider} alt="" />
         </SwiperSlide>
       </Swiper>
-      <div className="swiper-button-prev"></div>
-      <div className="swiper-button-next"></div>
+      <div className="swiper-button-prev" onClick={handlePrevButtonClick}></div>
+      <div className="swiper-button-next" onClick={handleNextButtonClick}></div>
       <div className="swiper-pagination"></div>
       <p className="slide-circle">
         <svg
